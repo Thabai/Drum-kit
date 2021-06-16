@@ -12,7 +12,7 @@
 <body>
         <div id="main">
             <div id="ride">
-                <img class="sym" src="img/Ride.png">
+                <img class="cym" src="img/Ride.png">
                     <div class="ride"></div>
             </div>
             <div id="tom">
@@ -32,61 +32,61 @@
                     <div class="snare"></div>
             </div>
             <div class="container">
-                <img id="hihat" class="sym" src="img/Hihat.png"> 
+                <img id="hihat" class="cym" src="img/Hihat.png"> 
                 <div class="sym"></div>     
-                <img id="hihatO" class="sym" src="img/HihatO.png">
+                <img id="hihatO" class="cym" src="img/HihatO.png">
                 <div class="sym"></div>
                     
         </div> <!--container-->
     </div> <!--main-->
 
     <div class="keyHit">
-        <div class="keys"> 
+        <div data-key="87" class="key"> 
             <p>W</p>
-            <p>boom</p> 
-            <audio id="boom" src="sounds/boom.wav"></audio>
+            <p class="sound">boom</p> 
+            <audio data-key="87" id="boom" src="sounds/boom.wav"></audio>
         </div>
-        <div class="keys"> 
+        <div data-key="69" class="key"> 
             <p>E</p>
-            <p>clap</p>
-            <audio id="clap" src="sounds/clap.wav"></audio> 
+            <p class="sound">clap</p>
+            <audio data-key="69" id="clap" src="sounds/clap.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="82" class="key"> 
             <p>R</p>
-            <p>hihat</p>
-            <audio id="hihat" src="sounds/hihat.wav"></audio> 
+            <p class="sound">hihat</p>
+            <audio data-key="82" id="hihat" src="sounds/hihat.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="83" class="key"> 
             <p>S</p>
-            <p>kick</p> 
-            <audio id="kick" src="sounds/kick.wav"></audio>
+            <p class="sound">kick</p> 
+            <audio data-key="83" id="kick" src="sounds/kick.wav"></audio>
         </div>
-        <div class="keys"> 
+        <div data-key="68" class="key"> 
             <p>D</p>
-            <p>openhat</p>
-            <audio id="openhat" src="sounds/openhat.wav"></audio> 
+            <p class="sound">openhat</p>
+            <audio data-key="68" id="openhat" src="sounds/openhat.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="70" class="key"> 
             <p>F</p>
-            <p>ride</p>
-            <audio id="ride" src="sounds/ride.wav"></audio> 
+            <p class="sound">ride</p>
+            <audio data-key="70" id="ride" src="sounds/ride.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="90" class="key"> 
             <p>Z</p>
-            <p>snare</p>
-            <audio id="snare" src="sounds/snare.wav"></audio> 
+            <p class="sound">snare</p>
+            <audio data-key="90" id="snare" src="sounds/snare.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="88" class="key"> 
             <p>X</p>
-            <p>tink</p>
-            <audio id="tink" src="sounds/tink.wav"></audio> 
+            <p class="sound">tink</p>
+            <audio data-key="88" id="tink" src="sounds/tink.wav"></audio> 
         </div>
-        <div class="keys"> 
+        <div data-key="67" class="key"> 
             <p>C</p>
-            <p>tom</p> 
-            <audio id="tom" src="sounds/tom.wav"></audio>
+            <p class="sound">tom</p> 
+            <audio data-key="67" id="tom" src="sounds/tom.wav"></audio>
         </div>
-    </div>
+    </div> <!--key hit-->
     <script src="drums.js"></script>
 </body>
 </html>
