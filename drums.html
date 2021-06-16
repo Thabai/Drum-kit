@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="drums.css">
+</head>
+
+
+<body>
+    <div class="drumContainer">
+        <div id="main">
+            <div id="ride">
+                <img class="sym" src="img/Ride.png">
+                    <div class="ride"></div>
+            </div>
+            <div id="tom">
+                <img class="drumMini" src="img/Tom.png">
+                    <div class="tom"></div>
+            </div>
+            <div id="boom">
+            <img class="drum" src="img/drum.png">
+                <div class="boom"></div>
+            </div>
+            <div id="kick">
+                <img class="drum" src="img/drum.png">
+                    <div class="kick"></div>
+            </div>
+            <div id="snare">
+                <img class="drumMini" src="img/Snare.png">
+                    <div class="snare"></div>
+            </div>
+            <div id="hihat">
+                <img class="sym" src="img/Hihat.png">
+                    <div class="kick"></div>
+            </div>
+   
+    </div>
+</div>
+    <div class="keyHit">
+        <div class="keys"> 
+            <p>W</p>
+            <p>boom</p> 
+            <audio id="boom" src="sounds/boom.wav"></audio>
+        </div>
+        <div class="keys"> 
+            <p>E</p>
+            <p>clap</p>
+            <audio id="clap" src="sounds/clap.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>R</p>
+            <p>hihat</p>
+            <audio id="hihat" src="sounds/hihat.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>S</p>
+            <p>kick</p> 
+            <audio id="kick" src="sounds/kick.wav"></audio>
+        </div>
+        <div class="keys"> 
+            <p>D</p>
+            <p>openhat</p>
+            <audio id="openhat" src="sounds/openhat.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>F</p>
+            <p>ride</p>
+            <audio id="ride" src="sounds/ride.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>Z</p>
+            <p>snare</p>
+            <audio id="snare" src="sounds/snare.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>X</p>
+            <p>tink</p>
+            <audio id="tink" src="sounds/tink.wav"></audio> 
+        </div>
+        <div class="keys"> 
+            <p>C</p>
+            <p>tom</p> 
+            <audio id="tom" src="sounds/tom.wav"></audio>
+        </div>
+    </div>
+    <script src="drums.js"></script>
+</body>
+</html>

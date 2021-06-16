@@ -1,0 +1,62 @@
+/* Some CSS Setup - nothing to do with flexbox */
+* {
+  box-sizing: border-box;
+}
+
+
+
+#main {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  margin-top: 200px;
+  align-items: center;
+  width: 80%;
+  padding-left: 100px;
+}
+
+img {
+  height: 300px;
+}
+
+.drum {
+  width: 100%;
+  height: 70%;
+}
+.drumMini{
+  width: 100%;
+  height: 80%;
+}
+.sym {
+  width: 100%;
+  height: 100%;
+}
+  
+.keyHit{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.keys {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  #main {
+    height: 300px;
+    margin-top: 50px;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .keyHit{
+    margin: 10px 10px;
+    justify-content: space-between;
+ 
+  }
+}
