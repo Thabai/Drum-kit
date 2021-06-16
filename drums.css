@@ -31,12 +31,25 @@ img {
   width: 100%;
   height: 100%;
 }
-  
+
+/*sym pic over other*/
+.container {
+  position: relative;
+}
+
+#hihatO {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* key section */
 .keyHit{
   display: flex;
   flex-direction: row;
   margin: 30px 100px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .keys {
