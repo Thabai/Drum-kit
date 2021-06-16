@@ -24,4 +24,5 @@ const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 // We will listen to the event of the keys pressed
-window.addEventListener('keydown', playSound);
+window.addEventListener('keydown', playSound)
+window.addEventListener('mousedown', clickSound) 
