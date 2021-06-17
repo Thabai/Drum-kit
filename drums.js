@@ -1,8 +1,5 @@
 
-
-
-
-function playSound(e) {
+function playSounds(e) {
     // Get element that matches the key pressed
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -24,5 +21,12 @@ const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 // We will listen to the event of the keys pressed
-window.addEventListener('keydown', playSound)
-window.addEventListener('mousedown', clickSound) 
+window.addEventListener('keydown', playSounds);
+// window.addEventListener('click' )
+
+
+
+function playSound(part) {
+    const sound = document.getElementById(part);
+    sound.play();
+}
