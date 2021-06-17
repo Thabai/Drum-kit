@@ -12,23 +12,23 @@
 <body>
         <div id="main">
             <div onclick="playSound('ride')" >
-                <img class="cym" src="img/Ride.png">
+                <img id="big" class="cym" src="img/Ride.png">
                     <div class="ride"></div>
             </div>
             <div onclick="playSound('tom')">
-                <img class="drumMini" src="img/Tom.png">
+                <img id="big" class="drumMini" src="img/Tom.png">
                     <div class="tom"></div>
             </div>
             <div onclick="playSound('boom')">
-            <img class="drum" src="img/Drum.png">
+            <img id="big" class="drum" src="img/Drum.png">
                 <div class="boom"></div>
             </div>
             <div onclick="playSound('kick')">
-                <img class="drumMini" src="img/Drum1.png">
+                <img id="big" class="drumMini" src="img/Drum1.png">
                     <div class="kick"></div>
             </div>
             <div onclick="playSound('snare')">
-                <img class="drumMini" src="img/Snare.png">
+                <img id="big" class="drumMini" src="img/Snare.png">
                     <div class="snare"></div>
             </div>
             <div class="container" onmouseup="playSound('hihat')" onmousedown="playSound('openhat')">
@@ -39,51 +39,52 @@
     </div> <!--main-->
 
     <div class="keyHit">
-        <div onclick="playSound('boom')" data-key="87" class="key"> 
-            <p>W</p>
-            <p class="sound">boom</p> 
-            <audio data-key="87" id="boom" src="sounds/boom.wav"></audio>
-        </div>
-        <div onclick="playSound('clap')" data-key="69" class="key"> 
-            <p >E</p>
-            <p class="sound">clap</p>
-            <audio data-key="69" id="clap" src="sounds/clap.wav"></audio> 
-        </div>
-        <div onclick="playSound('hihat')" data-key="82" class="key"> 
-            <p>R</p>
-            <p class="sound">hihat</p>
-            <audio data-key="82" id="hihat" src="sounds/hihat.wav"></audio> 
-        </div>
-        <div onclick="playSound('kick')" data-key="83" class="key"> 
-            <p>S</p>
-            <p class="sound">kick</p> 
-            <audio data-key="83" id="kick" src="sounds/kick.wav"></audio>
-        </div>
-        <div onclick="playSound('openhat')" data-key="68" class="key"> 
-            <p>D</p>
-            <p class="sound">openhat</p>
-            <audio data-key="68" id="openhat" src="sounds/openhat.wav"></audio> 
-        </div>
         <div onclick="playSound('ride')" data-key="70" class="key"> 
             <p>F</p>
             <p class="sound">ride</p>
             <audio data-key="70" id="ride" src="sounds/ride.wav"></audio> 
-        </div>
-        <div onclick="playSound('snare')" data-key="90" class="key"> 
-            <p>Z</p>
-            <p class="sound">snare</p>
-            <audio data-key="90" id="snare" src="sounds/snare.wav"></audio> 
-        </div>
-        <div onclick="playSound('tink')" data-key="88" class="key"> 
-            <p>X</p>
-            <p class="sound">tink</p>
-            <audio data-key="88" id="tink" src="sounds/tink.wav"></audio> 
         </div>
         <div onclick="playSound('tom')" data-key="67" class="key"> 
             <p>C</p>
             <p class="sound">tom</p> 
             <audio data-key="67" id="tom" src="sounds/tom.wav"></audio>
         </div>
+        <div onclick="playSound('boom')" data-key="87" class="key"> 
+            <p>W</p>
+            <p class="sound">boom</p> 
+            <audio data-key="87" id="boom" src="sounds/boom.wav"></audio>
+        </div>
+        <div onclick="playSound('kick')" data-key="83" class="key"> 
+            <p>S</p>
+            <p class="sound">kick</p> 
+            <audio data-key="83" id="kick" src="sounds/kick.wav"></audio>
+        </div>
+        <div onclick="playSound('snare')" data-key="90" class="key"> 
+            <p>Z</p>
+            <p class="sound">snare</p>
+            <audio data-key="90" id="snare" src="sounds/snare.wav"></audio> 
+        </div>
+        <div onclick="playSound('hihat')" data-key="82" class="key"> 
+            <p>R</p>
+            <p class="sound">hihat</p>
+            <audio data-key="82" id="hihat" src="sounds/hihat.wav"></audio> 
+        </div>
+        <div onclick="playSound('openhat')" data-key="68" class="key"> 
+            <p>D</p>
+            <p class="sound">openhat</p>
+            <audio data-key="68" id="openhat" src="sounds/openhat.wav"></audio> 
+        </div>
+        <div onclick="playSound('clap')" data-key="69" class="key"> 
+            <p >E</p>
+            <p class="sound">clap</p>
+            <audio data-key="69" id="clap" src="sounds/clap.wav"></audio> 
+        </div>
+        <div onclick="playSound('tink')" data-key="88" class="key"> 
+            <p>X</p>
+            <p class="sound">tink</p>
+            <audio data-key="88" id="tink" src="sounds/tink.wav"></audio> 
+        </div>
+        
     </div> <!--key hit-->
     <script src="script/drums.js"></script>
 </body>

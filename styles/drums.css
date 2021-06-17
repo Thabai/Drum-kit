@@ -17,6 +17,7 @@
 
 img {
   height: 300px;
+  padding: 2px;
 }
 
 .drum {
@@ -47,6 +48,10 @@ img {
 #hihatO:active {
   opacity: 1;
   transition: all 0.3s ease;
+}
+
+#big:active {
+  transform: scale(1.1);
 }
 
 
