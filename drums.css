@@ -37,14 +37,14 @@ img {
   position: relative;
 }
 
-#hihatO {
+#hihatO{
   position: absolute;
   top: 0px;
   left: 0px;
   opacity: 0;
 }
 
-.hihatO::after{
+#hihatO:active {
   opacity: 1;
   transition: all 0.3s ease;
 }
