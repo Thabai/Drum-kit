@@ -7,6 +7,8 @@ function playSounds(e) {
     this.playSound(audio.id);
 
 }
+window.addEventListener('keydown', playSounds); 
+
 function bigSmall(e) {
     if (!e) return;
     e.style.transform = "scale(1.1)";
@@ -26,11 +28,23 @@ function playSound(part) {
     
     sound.currentTime = 0;
     sound.play();
-  
+
 }
 
 
-// We will listen to the event of the keys pressed
-window.addEventListener('keydown', playSounds);
-window.addEventListener ('click', playSound);
-
+const parts = ['boom', 'clap', 'hihat', 'kick', 'openhat', 'ride', 'snare', 'tink', 'tom'];
+for (i= 0; i < parts.length; i++) {
+    let part = parts[i];
+    
+    pic= document.getElementById('pic-'+part);
+    if (pic) {
+        pic.addEventListener('click', function(){
+            playSound(part);
+        });
+    }
+    key = document.getElementById('key-'+part);
+    key.addEventListener('click', function(){
+            playSound(part);
+       
+   });
+}
