@@ -1,2 +1,2 @@
 # Drumkit
-https://thabai.github.io/Drums/
+https://thabai.github.io/Drum-kit/
